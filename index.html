@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    	  <title>toonsville</title>
+        <link href="toonsville.css" rel="stylesheet">
+		    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	    	<link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope%7CElsie%7CHandlee" rel="stylesheet">
+	    	<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One%7CPoiret+One%7CSigmar+One" rel="stylesheet">
+				<link rel="icon" href="images/goofy.png">
+	  	<!-- Start WOWSlider.com HEAD section -->
+			 
+			 <script src='wowslider.js'></script>
+			 <script src='script.js'></script>
+			 <script src="jquery.js"></script>
+			 
+     <!-- End WOWSlider.com HEAD section -->
+		  <script src="Toonsville.js"></script>
+	  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		  <script src="carousel.js"></script>
+		
+		
+      <!-- JQUERY CODE FOR HAMBURGER MENU --> 
+
+	<script>
+    $(document).ready(function(){
+      $(".hamburger-btn .fa-times").hide();
+
+    $(".hamburger-btn .fa-bars").click(function(){
+      $(this).hide();
+      $(".hamburger-btn .fa-times").show();
+      $(".mob ul").addClass("active");
+    });
+
+    $(".hamburger-btn .fa-times").click(function(){
+      $(this).hide();
+      $(".hamburger-btn .fa-bars").show();
+      $(".mob ul").removeClass("active");
+    });
+    });
+  </script>	
+
+  <!-- JQUERY CODE FOR SLOW DROP DOWN TO PRODUCTS SECTION --> 
+<script>    
+   
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (1000) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1000, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+
+</script>	
+<!--JAVASCRIPT CODE FOR BACKGROUND ANIMATION ON AND OFF-->
+
+<script>
+function myPlayFunction() {
+  document.getElementById("showcase").style.WebkitAnimationPlayState = "running"; // Code for Chrome, Safari, and Opera
+  document.getElementById("showcase").style.animationPlayState = "running";
+}
+
+function myPauseFunction() {
+  document.getElementById("showcase").style.WebkitAnimationPlayState = "paused"; // Code for Chrome, Safari, and Opera
+  document.getElementById("showcase").style.animationPlayState = "paused";
+}
+</script>
+</head>
+	
+
+	
+<body>
+		<div class="container-0">
+				<nav class="desk">
+					<ul>
+						<li class="active"><a href="#"><img src="images/goofy.png" height="32" id="logo" alt="goofy">TNV!</a></li>
+						<li class="rubberBand"><a href="#">Log in</a></li>
+						<li class="rubberBand"><a href="aboutus.html">about us</a></li>
+						<li class="rubberBand"><a href="#">blog</a></li>
+						<li class="rubberBand"><a href="#">contact</a></li>
+					</ul>
+				</nav>
+				
+				<nav class="mob">
+					<div class="hamburger-btn">
+							<i class="fa fa-bars" aria-hidden="true"></i>
+							<i class="fa fa-times" aria-hidden="true"></i>
+					</div>
+			
+					<ul>
+							<li class="active rubberBand"><a href="#">home</a></li>
+							<li class="rubberBand"><a href="#">Log in</a></li>
+						<li class="rubberBand"><a href="aboutus.html">about us</a></li>
+						<li class="rubberBand"><a href="#">blog</a></li>
+						<li class="rubberBand"><a href="#">contact us</a></li>
+					</ul>
+				</nav>
+			
+			</div> 
+ 
+
+
+		
+		<h1>Toonsville</h1>
+		
+<div id="showcase"> 
+		
+		<div class="looneys">
+				<button onclick="myPauseFunction()" class="fa fa-pause-circle btn-2">Pause</button>
+				<button onclick="myPlayFunction()" class="fa fa-play-circle btn-1">Play</button><!--CODE FOR BACKGROUND ANIMATION ON AND OFF-->
+
+		<img src="images/showcaseimage-compressor.png"   alt="cartoon characters">
+		<a href="#btn">  
+			
+		<div class="indicator">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				
+		</div>
+		</a>
+		
+			</div>	
+			
+		
+				
+</div>
+
+
+	
+<div class="container-1">
+
+	<div class="wrapper" id="btn">
+	<img src="images/astdog.png" alt="asterix and dogmatix">
+	<div class="inner-wrapper hidden">
+	<h2 class="welcome_message">Welcome to ToonsVille!</h2>
+		<p>Your one stop Retro cartoon station for those saturday morning toons or after school shows we all grew up loving. Relive the adventures of <strong>chip n dale,</strong> draw up your swords for <strong>Thundercats</strong> and save the environment with <strong>Captain Planet!</strong><br /><span class="about_us"><a href="aboutus.html">Read More...</a></span></p>
+		<div id=inner-wrapper-image3><img src="images/YogiLaughing.png" alt="yogi bear laughing"></div>
+		<img src="images/bart.png" alt="bart simpson peeking">
+		</div>
+		</div>
+	</div>	
+
+
+
+
+
+        <a></a><!--link to mid page and container 2-->
+	
+	<div class="container-2">
+	<h2>Discover the classic toons!</h2>
+	<p class="box-quote">Relive those saturday morning adventures!</p>
+	<div class="wrapper2">
+		<div class="box-quote">
+			<div class="box"><img src="images/mi.png" width="200" alt="disney characters"></div>
+		<p>"Search our comprehensive database of titles
+			<br>that cut across a variety of classic toons"</p>
+		</div>
+		
+		<div class="box-quote">
+
+		 <div class="box"><img src="images/simps.png" width="200" alt="simpsons"></div>
+		 <p>"Review and post comments on your<br>
+			favourite cartoons"</p>
+		
+		</div>
+			
+			
+		<div class="box-quote">
+		 <div class="box"><img src="images/scoobs.png" width="200" alt="scooby and friends"></div>
+		 <p>"Register for regular updates and newsletters<br>
+			for the latest additions to our collection"</p>
+		</div>
+		</div>
+	</div>
+
+<!--link to mid page and container 3-->
+
+
+	<div class="container-3">
+	<div class="subheadings">
+	<h2>What's New!</h2>
+	<p class="header-caption">New updates regularly on the site and our social media pages</p>
+	</div>
+	<div class="wrapper3">
+	<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/daria.jpg" alt="daria" title="daria" id="wows1_0"/></li>
+		<li><img src="data1/images/tmnt2.jpg" alt="ninja turtles" title="tmnt2" id="wows1_1"/></li>
+		<li><a href="http://wowslider.net"><img src="data1/images/slvhwks.jpg" alt="silver hawks" title="slvhwks" id="wows1_2"/></a></li>
+		<li><img src="data1/images/maskteam.jpg" alt="mask-team" title="mask-team" id="wows1_3"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="daria"><span><img src="data1/tooltips/daria.jpg" alt="daria"/>1</span></a>
+		<a href="#" title="tmnt2"><span><img src="data1/tooltips/tmnt2.jpg" alt="ninja turtles"/>2</span></a>
+		<a href="#" title="slvhwks"><span><img src="data1/tooltips/slvhwks.jpg" alt="silver hawks"/>3</span></a>
+		<a href="#" title="mask-team"><span><img src="data1/tooltips/maskteam.jpg" alt="mask-team"/>4</span></a>
+	
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">css slideshow</a> by WOWSlider.com v8.8m</div>
+<div class="ws_shadow"></div>
+</div>	
+<script  src="wowslider.js"></script>
+<script  src="script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+
+
+			<img src="images/wilecayote.png" height="180" class="wiley" alt="wiley cayote">
+		
+		<aside>
+			
+		<Ol>
+			<li>Lyrics and soundtracks to cartoon intros</li>
+			<li>Fun-Filled Facts You Never Knew About Retro cartoons</li>
+			<li>15 Cartoons All 80s Boys Should Remember</li>
+			<li>Embeded links to watch the cartoon intros</li>
+		</Ol>
+			
+			
+
+		</aside>
+ </div>
+</div>
+	
+			
+	<!-- FOOTER SECTION INCLUDING NEWSLETTER, SOCIAL MEDIA, DASTARDLY AND MUTTLEY IMAGE -->	
+		
+	<div class="newsletter">
+	<h3>NEWSLETTER SIGN UP</h3>
+	<P>Sign up today and receive notifications about updates straight to your inbox.</P>
+	<div class="search-container">
+   
+	<!--<input type="email" placeholder="Your Email">
+    <input type="submit" value="Subscribe &raquo;">-->
+<form class="example" action="/action_page.php">
+<input type="text" value="" id="myInput">
+<button onclick="document.getElementById('myInput').value = ''">Sign-up&raquo;</button>
+</form>
+		
+		
+    </div>
+	</div>
+	<footer>
+	<div class="footer">
+	<img src="images/dastardlyandmutley.png" alt="dastardly and mutley">
+	<div class="social-media-icons">
+		
+	<ul>
+        <li><a href=""><span></span></a></li>
+        <li><a href=""><span></span></a></li>
+        <li><a href=""><span></span></a></li>
+        <li><a href=""><span></span></a></li>
+    </ul>
+		
+	</div>	
+	
+
+		<p>&copy; Copyright 2018 Dotun Asunmo | University of Greenwich</p>
+	</div>
+
+	</footer>
+		
+
+		
+		
+	 
+	</body>
+</html>
+	

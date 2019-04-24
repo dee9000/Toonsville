@@ -1,0 +1,180 @@
+	
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    	<title>ToonsVille</title>
+        <link href="toonsville.css" rel="stylesheet">
+		<link href="aboutus.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope%7CElsie%7CHandlee" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One%7CPoiret+One%7CSigmar+One" rel="stylesheet">
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<script src="Toonsville.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="parallax.min.js"></script>
+				
+      <!-- JQUERY CODE FOR HAMBURGER MENU --> 
+
+	<script>
+		$(document).ready(function(){
+		  $(".hamburger-btn .fa-times").hide();
+	
+		$(".hamburger-btn .fa-bars").click(function(){
+		  $(this).hide();
+		  $(".hamburger-btn .fa-times").show();
+		  $(".mob ul").addClass("active");
+		});
+	
+		$(".hamburger-btn .fa-times").click(function(){
+		  $(this).hide();
+		  $(".hamburger-btn .fa-bars").show();
+		  $(".mob ul").removeClass("active");
+		});
+		});
+	  </script>	
+		</head>
+	<body>
+		
+		<div class="container-0">
+			<nav class="desk">
+				<ul>
+					<li class="active"><a href="index.html"><img src="images/goofy.png" height="32" id="logo" alt="disneys goofy upsidedown">TNV!</a></li>
+					<li class="rubberBand"><a href="#">Log in</a></li>
+					<li class="rubberBand"><a href="#">about us</a></li>
+					<li class="rubberBand"><a href="#">blog</a></li>
+					<li class="rubberBand"><a href="#">contact</a></li>
+				</ul>
+			</nav>
+			
+			<nav class="mob">
+				<div class="hamburger-btn">
+						<i class="fa fa-bars" aria-hidden="true"></i>
+						<i class="fa fa-times" aria-hidden="true"></i>
+				</div>
+		
+				<ul>
+						<li class="active rubberBand"><a href="index.html">home</a></li>
+						<li class="rubberBand"><a href="#">Log in</a></li>
+					<li class="rubberBand"><a href="#">about us</a></li>
+					<li class="rubberBand"><a href="#">blog</a></li>
+					<li class="rubberBand"><a href="#">contact us</a></li>
+				</ul>
+			</nav>
+		
+		</div> 
+
+	  
+		
+		
+		
+		
+		
+	<div class="container">
+			
+		<div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="images/hemanbackground-compressor.png"  data-speed="0.3">
+		<h2 class="left_side_heading">ABOUT US</h2>
+		</div>
+		<img src="images/timon.png" alt="timon lion king pointing up">
+<div class="innercontainer">
+	
+	<p class="aboutus">Hi all,<br/>
+	the journey towards creating a cartoon community or toonsville as it is called now has been a long dream of mine. The initial idea was to design a website for a thriving community of baby boomer and Generation xers to come together and relive a few moments of their childhood, yup, you remember those, those early morning saturday cartoons you couldn't miss with your favourite cereal on the table long before the days of viral memes, social media and mobile phones. But of course, it is a site for everyone to come and enjoy, learn about and find out about great cartoons they grew up watching.
+	Back then (when dinosaurs still roamed the earth..)i was a web technologies novice and knew nothing of how to get a website together,so fast forward a bagillion years later as part of a postgraduate degree program i decided it is time to actually bring toonsville to life as it was always a goal i had.
+
+    </p>
+	
+		</div>
+		<div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="images/classictoons7.png">
+		<h2 class="right_side_heading">saturday morning nostalgia!</h2>
+		</div>
+		
+		
+	<div class="innercontainer2">
+	<img src="images/sample1.png" onmouseover="this.src='images/sample2.gif'" onmouseout="this.src='images/sample1.png'" alt="old tv set showing cartoons and static">
+			
+	
+	
+	<p class="aboutus"> At the time there were few sites dedicated to retro cartoons online, however; i felt i could do a better design and create some functionality with it so here we are.   
+	<br	/>
+	So why not drop in, register on the site, post some comments, make suggestions and share and for just a few seconds relive that childhood and for heavens sakes show those milenialls what they are missing out on.
+	<br	/>
+	We will try to update the site with new additions from time to time and if you get on our mailing list will hear about it first. 
+	Here are a couple of my all time favourites...i tend to find a good intro soundtrack gets me in the mood(can't miss the intros, it's like missing the trailers to new movies at the cinema.)	
+	Chip ‘n Dale Rescue Rangers, Spiral Zone, Centurians, Transformers and lot's more...
+    <img src="images/me2.png" alt="emoji of author" id="myself">
+	</p>
+		
+		</div>			
+			
+	  <div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="images/classictoons5-compressor.png">
+	  <h2 class="centre_heading">"enjoy amazing retro cartoons!"</h2>
+	  </div>
+	</div>
+		<!--/end of container div-->
+		
+		
+	<!-- FOOTER SECTION INCLUDING NEWSLETTER, SOCIAL MEDIA, DASTARDLY AND MUTTLEY IMAGE -->	
+		
+	<div class="newsletter">
+	<h3>NEWSLETTER SIGN UP</h3>
+	<P>Sign up today and receive notifications about updates straight to your inbox.</P>
+	<div class="search-container">
+   
+	<!--<input type="email" placeholder="Your Email">
+    <input type="submit" value="Subscribe &raquo;">-->
+<form class="example" action="/action_page.php">
+<input type="text" value="" id="myInput">
+<button onclick="document.getElementById('myInput').value = ''">Sign-up&raquo;</button>
+</form>
+		
+		
+    </div>
+	</div>
+	
+	<div class="footer">
+	<img src="images/dastardlyandmutley.png" alt="dastardly and mutley">
+	<div class="social-media-icons">
+		
+	<ul>
+        <li><a href=""><span></span></a></li>
+        <li><a href=""><span></span></a></li>
+        <li><a href=""><span></span></a></li>
+        <li><a href=""><span></span></a></li>
+    </ul>
+		
+	</div>	
+	
+
+		<p>&copy; Copyright 2018 Dotun Asunmo | University of Greenwich</p>
+	</div>
+
+	
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</body>
+</html>
+
+
+
+
+
